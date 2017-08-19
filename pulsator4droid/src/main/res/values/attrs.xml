@@ -6,11 +6,31 @@
         <attr name="pulse_repeat" format="integer"/>
         <attr name="pulse_maxScale" format="float"/>
         <attr name="pulse_startFromScratch" format="boolean"/>
+        <attr name="pulse_strokeWidth" format="float"/>
+        <attr name="pulse_min_alpha" format="float"/>
+        <attr name="pulse_max_alpha" format="float"/>
+        <attr name="pulse_min_scale" format="float"/>
+        <attr name="pulse_max_scale" format="float"/>
+        <attr name="pulse_start_angle" format="float"/>
+        <attr name="pulse_sweep_angle" format="float"/>
+        <attr name="pulse_margin" format="dimension"/>
+        <attr name="pulse_colors" format="reference"/>
+
         <attr name="pulse_interpolator" format="enum">
             <enum name="Linear" value="0"/>
             <enum name="Accelerate" value="1"/>
             <enum name="Decelerate" value="2"/>
             <enum name="AccelerateDecelerate" value="3"/>
+        </attr>
+
+        <attr name="pulse_style" format="enum">
+            <enum name="fill" value="0"/>
+            <enum name="stroke" value="1"/>
+        </attr>
+
+        <attr name="pulse_repeat_mode" format="enum">
+            <enum name="restart" value="1"/>
+            <enum name="reverse" value="2"/>
         </attr>
     </declare-styleable>
 </resources>
